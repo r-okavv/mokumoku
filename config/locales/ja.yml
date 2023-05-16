@@ -8,5 +8,6 @@ ja:
         liked_event: あなたのイベントにいいねがついた時
     user:
       gender:
+        other: 'その他'
         man: '男性'
         woman: '女性'

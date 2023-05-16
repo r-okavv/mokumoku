@@ -21,7 +21,7 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
   validates :gender, presence: true
 
-  enum gender: {man: 0, woman: 1}
+  enum gender: {other: 0, man: 1, woman: 2}
 
   scope :allowing_created_event_notification,
         -> { joins(:notification_timings).merge(NotificationTiming.created_event) }
